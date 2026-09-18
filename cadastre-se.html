@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+
+    <header class="header-01">
+        <a href="index.html" aria-label="Voltar">
+            <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        </a>
+
+        <section>
+            <h1>Criar conta</h1>
+            <p>Preencha os campos a seguir para se registrar no Traço Livre.</p>
+        </section>
+    </header>
+
+    <main>
+        <form autocomplete="off">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="nm-completo">Nome completo</label>
+                <input id="nm-completo" type="text" name="nm_completo" maxlength="45" placeholder="Digitar nome" required>
+
+                <label for="nm-usuario">Nome de usuário</label>
+                <input id="nm-usuario" type="text" name="nm_usuario" maxlength="30"
+                    placeholder="Digitar nome de usuário" required>
+
+                <label for="dt-nascimento">Data de nascimento</label>
+                <input id="dt-nascimento" type="date" name="dt_nascimento" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de contato</legend>
+
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" maxlength="45" placeholder="Digitar email" required>
+
+                <label for="tel">Telefone</label>
+                <input id="tel" type="tel" name="tel" placeholder="(99) 99999-9999" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados credenciais</legend>
+
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" name="senha" minlength="8" maxlength="45" placeholder="Digitar senha" required>
+
+                <label for="conf-senha">Confirmar senha</label>
+                <input id="conf-senha" type="password" minlength="8" maxlength="45" placeholder="Digitar senha" required>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="container-button">
+        <button class="botao-verde">Avançar</button>
+    </footer>
+</body>
+
+</html>
